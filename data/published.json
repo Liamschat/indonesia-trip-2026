@@ -40,12 +40,13 @@
       "date": "2026-11-16",
       "time": "",
       "timeLabel": "深夜",
-      "title": "寄存大箱",
-      "note": "机场寄存柜台和夜间营业时间待核实",
-      "type": "活动",
-      "status": "pending",
+      "title": "机场内 PassGo 行李寄存",
+      "note": "抵达巴厘岛 DPS 机场后，在机场内 PassGo 寄存大件行李，再前往 Interconnection Hostel。寄存地点由用户确认；具体柜台位置、营业时间及费用以现场为准。",
+      "place": "PassGo Ngurah Rai International Airport Bali",
+      "type": "交通",
+      "status": "confirmed",
       "timezone": "Asia/Makassar",
-      "updatedAt": "2026-11-14T08:00:00.000Z"
+      "updatedAt": "2026-11-14T14:53:58.010Z"
     },
     {
       "id": "event-2026-11-16-3",
