@@ -65,12 +65,14 @@
       "date": "2026-11-17",
       "time": "08:00",
       "timeLabel": "08:00",
-      "title": "从青旅出发前往 Sanur 港",
-      "note": "预计09:00到船公司报到",
-      "type": "活动",
-      "status": "pending",
+      "title": "08:00准时出门：青旅 → MKP Lounge",
+      "note": "从 Interconnection Kuta Hostel（互联互通青年旅舍）打车，直接前往 Sanur 港的 MKP Lounge 换票报到。车程预计不到1小时，目标09:00抵达，提前1小时办理10:00船班换票；路况与最终集合点以实际情况和船票凭证为准。",
+      "type": "交通",
+      "status": "confirmed",
       "timezone": "Asia/Makassar",
-      "updatedAt": "2026-11-14T08:00:00.000Z"
+      "updatedAt": "2026-11-14T15:34:23.892Z",
+      "place": "MKP Lounge, 87H6+H6 Sanur Kaja, Denpasar, Bali",
+      "routeOrigin": "Interconnection Kuta Hostel, Jl. Kartika Plaza No.17X, Kuta, Bali"
     },
     {
       "id": "event-2026-11-17-2",
@@ -78,11 +80,11 @@
       "time": "10:00",
       "timeLabel": "10:00",
       "title": "Semabu Hill 快船",
-      "note": "Sanur → Banjar Nyuh；已购买；最终报到地址以凭证为准；支付状态来自用户口述，未逐张核验凭证。",
+      "note": "Sanur → Banjar Nyuh；已购买；最终报到地址以凭证为准；支付状态来自用户口述，未逐张核验凭证。 乘船提示（用户提供）：Semabu Hill 可去二楼透气；需额外付费并购买一瓶饮料，合计约人民币20元，实际收费及开放情况以现场为准。此为参考费用，非实际消费。",
       "type": "交通",
       "status": "paid",
       "timezone": "Asia/Makassar",
-      "updatedAt": "2026-11-14T08:00:00.000Z"
+      "updatedAt": "2026-11-14T15:35:52.458Z"
     },
     {
       "id": "event-2026-11-17-3",
@@ -90,11 +92,12 @@
       "time": "12:30",
       "timeLabel": "12:30",
       "title": "午餐、租摩托后前往东线",
-      "note": "预计12:30–13:00出发，不先去酒店",
+      "note": "在 Banjar Nyuh Harbour（班贾尔纽码头）附近租摩托、吃午饭后，骑摩托环岛前往 Diamond Beach（钻石沙滩），不先去酒店；预计12:30–13:00出发。地图暂定位码头，不代表已确定租车店。路况提醒（用户提供）：前往钻石沙滩的后半段坡很大，有“炮弹坑”（较深坑洼）；建议时速保持30公里以下，遇陡坡、坑洼或湿滑路面还应进一步减速，以实际路况和安全操控为准。\n租摩托检查清单（用户补充）：\n1. 先问清是否收押金、押金金额及退还条件。\n2. 询问能否加钱请店家补充汽油，确认费用及还车油量要求。\n3. 优先选小排量、自己容易控制且万一倒车也较容易扶起的车型。\n4. 检查前后轮胎：花纹要清晰、较新，不能磨平；发现明显磨损或损伤就要求换车。\n5. 取车前试前后刹车，必须灵敏、制动正常。\n6. 拿车时拍照或录像记录整车实况，尤其已有划痕、破损及轮胎，避免还车时发生车损争议。",
       "type": "活动",
       "status": "pending",
       "timezone": "Asia/Makassar",
-      "updatedAt": "2026-11-14T08:00:00.000Z"
+      "updatedAt": "2026-11-14T16:41:42.585Z",
+      "place": "Banjar Nyuh Harbour, Nusa Penida, Bali, Indonesia"
     },
     {
       "id": "event-2026-11-17-4",
@@ -106,7 +109,8 @@
       "type": "活动",
       "status": "pending",
       "timezone": "Asia/Makassar",
-      "updatedAt": "2026-11-14T08:00:00.000Z"
+      "updatedAt": "2026-11-14T15:43:21.438Z",
+      "place": "Diamond Beach, Pejukutan, Nusa Penida, Klungkung, Bali, Indonesia"
     },
     {
       "id": "event-2026-11-17-5",
@@ -185,12 +189,13 @@
       "date": "2026-11-19",
       "time": "15:00",
       "timeLabel": "15:00",
-      "title": "目标时间：快船报到",
-      "note": "返程船票和港口待核对；支付状态来自用户口述，未逐张核验凭证。",
+      "title": "到达 Semabu Hills Fast Boat Lounge & Point，返船报到",
+      "note": "15:00为目标报到时间，提前1小时办理16:00返巴厘岛船班手续。佩妮达岛返程集合点为 Semabu Hills Fast Boat Lounge & Point（用户确认）；换票后按工作人员指引候船、登船。",
       "type": "交通",
       "status": "confirmed",
       "timezone": "Asia/Makassar",
-      "updatedAt": "2026-11-14T08:00:00.000Z"
+      "updatedAt": "2026-11-14T15:50:21.306Z",
+      "place": "Semabu Hills Fast Boat Lounge & Point, Nusa Penida, Bali, Indonesia"
     },
     {
       "id": "event-2026-11-19-3",
@@ -198,35 +203,38 @@
       "time": "16:00",
       "timeLabel": "16:00",
       "title": "乘快船返回巴厘岛",
-      "note": "风浪或延误会影响后续航班；支付状态来自用户口述，未逐张核验凭证。",
+      "note": "从佩妮达岛返回巴厘岛 Sanur。先在 Semabu Hills Fast Boat Lounge & Point 报到，再按工作人员指引登船；风浪或延误可能影响当晚航班。船票已购买（用户确认）。",
       "type": "交通",
       "status": "paid",
       "timezone": "Asia/Makassar",
-      "updatedAt": "2026-11-14T08:00:00.000Z"
+      "updatedAt": "2026-11-14T15:50:21.306Z",
+      "place": "Semabu Hills Fast Boat Lounge & Point, Nusa Penida, Bali, Indonesia"
     },
     {
       "id": "event-2026-11-19-4",
       "date": "2026-11-19",
       "time": "",
       "timeLabel": "傍晚",
-      "title": "从 Sanur 前往 DPS",
-      "note": "取寄存大箱、转国内航站楼",
+      "title": "Sanur 下船 → 打车去 DPS 机场，取寄存行李",
+      "note": "16:00从佩妮达开船，按船程约40–60分钟、下船后打车约1小时估算，约17:40–18:00抵达机场；未计下船、等车、堵车及取 PassGo 寄存行李时间。之后取大箱并前往国内出发，衔接20:30航班。比此前误记的19:00起飞更宽裕，仍需预留取箱、值机、托运与安检时间；具体截止时间以航司要求为准。",
       "type": "活动",
       "status": "pending",
       "timezone": "Asia/Makassar",
-      "updatedAt": "2026-11-14T08:00:00.000Z"
+      "updatedAt": "2026-11-14T15:53:43.763Z",
+      "place": "I Gusti Ngurah Rai International Airport, Bali, Indonesia"
     },
     {
       "id": "event-2026-11-19-5",
       "date": "2026-11-19",
       "time": "21:30",
       "timeLabel": "21:30",
-      "title": "抵达泗水 SUB 机场",
-      "note": "已购买；DPS 起飞时刻待补充；支付状态来自用户口述，未逐张核验凭证。",
+      "title": "21:30 抵达泗水朱安达机场 SUB · ID6415",
+      "note": "用户更正为21:30抵达，按泗水当地时间UTC+7记录；此前21:00作废。截图时间栏为“20:30至20:30”，因此21:30尚未通过截图核验，需以完整电子机票确认。司机接机时间同步以最终抵达时刻为准。",
       "type": "交通",
       "status": "paid",
       "timezone": "Asia/Jakarta",
-      "updatedAt": "2026-11-14T08:00:00.000Z"
+      "updatedAt": "2026-11-14T15:53:43.763Z",
+      "place": "Juanda International Airport, Surabaya, Indonesia"
     },
     {
       "id": "event-2026-11-19-6",
@@ -305,12 +313,13 @@
       "date": "2026-11-21",
       "time": "19:00",
       "timeLabel": "19:00",
-      "title": "计划航班返回巴厘岛",
-      "note": "已购买；航班号待补充",
+      "title": "19:00 泗水 SUB T1 起飞 → 巴厘岛 DPS · 8B5377",
+      "note": "2026年11月21日，翎亚航空（TransNusa）8B5377，朱安达机场T1出发。19:00为泗水当地时间UTC+7，21:05抵达巴厘岛为当地时间UTC+8；时间、航班号及出发航站楼与用户截图一致。两地相差1小时，按当地时间换算飞行时长约1小时05分钟。",
       "type": "交通",
       "status": "paid",
       "timezone": "Asia/Jakarta",
-      "updatedAt": "2026-11-14T08:00:00.000Z"
+      "updatedAt": "2026-11-14T15:55:03.609Z",
+      "place": "Juanda International Airport Terminal 1, Surabaya, Indonesia"
     },
     {
       "id": "event-2026-11-22-1",
@@ -455,6 +464,45 @@
       "status": "paid",
       "timezone": "Asia/Makassar",
       "updatedAt": "2026-11-14T08:00:00.000Z"
+    },
+    {
+      "id": "event-2026-11-17-checkin",
+      "date": "2026-11-17",
+      "time": "09:00",
+      "timeLabel": "09:00",
+      "title": "抵达 MKP Lounge，换票与报到",
+      "note": "目标提前1小时抵达，办理10:00 Semabu Hill 船班换票。换完票后在 MKP Lounge 等候，会有工作人员专门带领前往候船大厅；换票点与候船大厅、登船口需区分。现场有饮用水、厕所，也可以买吃的（用户提供）。",
+      "place": "MKP Lounge, 87H6+H6 Sanur Kaja, Denpasar, Bali",
+      "type": "交通",
+      "status": "confirmed",
+      "timezone": "Asia/Makassar",
+      "updatedAt": "2026-11-14T15:40:33.114Z"
+    },
+    {
+      "id": "event-2026-11-19-flight-departure",
+      "date": "2026-11-19",
+      "time": "20:30",
+      "timeLabel": "20:30",
+      "title": "20:30 巴厘岛 DPS 起飞 → 泗水 SUB · ID6415",
+      "note": "用户更正：2026年11月19日20:30从巴厘岛起飞（UTC+8），21:30抵达泗水（UTC+7）。截图可见航班号ID6415，但时间栏写“20:30至20:30”，与用户提供的抵达时间不一致；暂按用户文字记录，抵达时刻待完整电子机票核对。此前19:00起飞作废。",
+      "place": "I Gusti Ngurah Rai International Airport, Bali, Indonesia",
+      "type": "交通",
+      "status": "paid",
+      "timezone": "Asia/Makassar",
+      "updatedAt": "2026-11-14T15:53:43.763Z"
+    },
+    {
+      "id": "event-2026-11-21-flight-arrival",
+      "date": "2026-11-21",
+      "time": "21:05",
+      "timeLabel": "21:05",
+      "title": "21:05 抵达巴厘岛伍拉·赖机场 DPS · 8B5377",
+      "note": "巴厘岛当地时间UTC+8。取行李后前往当晚酒店；酒店名称和接送安排待补充。",
+      "place": "I Gusti Ngurah Rai International Airport, Bali, Indonesia",
+      "type": "交通",
+      "status": "paid",
+      "timezone": "Asia/Makassar",
+      "updatedAt": "2026-11-14T15:55:03.609Z"
     }
   ],
   "expenses": [],
