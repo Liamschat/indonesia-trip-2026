@@ -8,6 +8,11 @@ const name = id => data.members.find(m => m.id === id)?.name || id;
 const money = (n,c) => new Intl.NumberFormat('zh-CN', { maximumFractionDigits: c === 'IDR' ? 0 : 2 }).format(n);
 const alive = rows => rows.filter(r => !r.deleted);
 const eventOrder = r => r.time || ({'凌晨':'02:00','早上':'08:00','上午':'09:00','白天':'11:00','中午':'12:00','下午':'14:00','傍晚':'18:00','晚上':'20:00','深夜':'23:50'}[r.timeLabel] || '99:99');
+function mapUrl(event) {
+  const destination = event.place || event.title;
+  if (event.routeOrigin) return 'https://www.google.com/maps/dir/?api=1&origin=' + encodeURIComponent(event.routeOrigin) + '&destination=' + encodeURIComponent(destination) + '&travelmode=driving';
+  return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(destination);
+}
 const now = () => new Date().toISOString();
 const id = () => globalThis.crypto?.randomUUID?.() || Date.now() + '-' + Math.random().toString(36).slice(2);
 function error(e) { $('#errorBox').hidden = false; $('#errorBox').textContent = e.message || String(e); }
@@ -37,7 +42,7 @@ function render() {
   const jump=$('#jumpDate').value; $('#jumpDate').innerHTML='<option value="">选择日期</option>'+dates.map(d=>`<option>${d}</option>`).join('');$('#jumpDate').value=jump;
   $('#days').innerHTML=dates.map(date=>{
     const events=alive(data.events).filter(e=>e.date===date).sort((a,b)=>eventOrder(a).localeCompare(eventOrder(b))||a.id.localeCompare(b.id));
-    return `<article class="day" id="day-${date}"><div class="day-head"><div><div class="day-date">${date} · ${new Date(date+'T12:00:00').toLocaleDateString('zh-CN',{weekday:'long'})}</div><h3>${date<'2026-11-17'?'抵达巴厘岛':date<'2026-11-20'?'佩妮达与转场':date<'2026-11-22'?'东爪哇':date<'2026-11-27'?'巴厘岛慢游':'后续旅程'}</h3></div><span class="chip">${events.length} 项</span></div><div class="timeline">${events.map(e=>`<div class="event"><div class="when">${esc(e.time||e.timeLabel||'待定')}<small>${e.timezone==='Asia/Jakarta'?'UTC+7':'UTC+8'}</small></div><div class="rail"><span class="dot"></span><span class="line"></span></div><div class="event-body"><span class="chip ${e.status==='pending'?'wait':''}">${labels[e.status]}</span><strong>${esc(e.title)}</strong><p>${esc(e.note)}</p><small>${esc(e.type)}</small> <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(e.place||e.title)}" target="_blank" rel="noopener">地图 ↗</a>${controls('events',e)}</div></div>`).join('')||'<p class="small">暂无安排，可在编辑模式添加。</p>'}</div></article>`;
+    return `<article class="day" id="day-${date}"><div class="day-head"><div><div class="day-date">${date} · ${new Date(date+'T12:00:00').toLocaleDateString('zh-CN',{weekday:'long'})}</div><h3>${date<'2026-11-17'?'抵达巴厘岛':date<'2026-11-20'?'佩妮达与转场':date<'2026-11-22'?'东爪哇':date<'2026-11-27'?'巴厘岛慢游':'后续旅程'}</h3></div><span class="chip">${events.length} 项</span></div><div class="timeline">${events.map(e=>`<div class="event"><div class="when">${esc(e.time||e.timeLabel||'待定')}<small>${e.timezone==='Asia/Jakarta'?'UTC+7':'UTC+8'}</small></div><div class="rail"><span class="dot"></span><span class="line"></span></div><div class="event-body"><span class="chip ${e.status==='pending'?'wait':''}">${labels[e.status]}</span><strong>${esc(e.title)}</strong><p>${esc(e.note)}</p><small>${esc(e.type)}</small> <a href="${esc(mapUrl(e))}" target="_blank" rel="noopener">地图 ↗</a>${controls('events',e)}</div></div>`).join('')||'<p class="small">暂无安排，可在编辑模式添加。</p>'}</div></article>`;
   }).join('');
   const expenses=alive(data.expenses);$('#totalCount').textContent=expenses.length;
   for(const [currency,selector,prefix] of [['CNY','#cny','¥'],['IDR','#idr','Rp ']])$(selector).textContent=prefix+money(expenses.filter(e=>e.currency===currency).reduce((n,e)=>n+e.amount,0),currency);

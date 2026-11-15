@@ -1,4 +1,4 @@
-const CACHE = 'indonesia-trip-shell-20261114-2';
+const CACHE = 'indonesia-trip-shell-20261114-3';
 const ASSETS = ['./','./index.html','./style.css','./core.js','./app.js','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./data/published.json','./README.md'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS))));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{for(const key of await caches.keys())if(key.startsWith('indonesia-trip-shell-')&&key!==CACHE)await caches.delete(key);await self.clients.claim();})()));
